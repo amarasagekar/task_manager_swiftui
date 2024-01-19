@@ -20,6 +20,14 @@ extension Date {
         return Calendar.current.isDateInToday(self)
     }
     
+    var isSmaeHour: Bool{
+        return Calendar.current.compare(self, to: .init(), toGranularity: .hour) == .orderedSame
+    }
+    
+    var isPast: Bool{
+        return Calendar.current.compare(self, to: .init(), toGranularity: .hour) == .orderedAscending
+    }
+    
     //Fetching week based on given date
     func fetchWeek(_ date: Date = .init()) -> [WeekDay] {
         let calendar = Calendar.current
@@ -41,5 +49,25 @@ extension Date {
     struct WeekDay: Identifiable {
         var id: UUID = .init()
         var date: Date
+    }
+    
+    //Creating next week based on last current week date
+    func createNextWeek() -> [WeekDay] {
+        let calendar = Calendar.current
+        let startOfLastDate = calendar.startOfDay(for: self)
+        guard let nextDate = calendar.date(byAdding: .day, value: 1, to: startOfLastDate) else {
+            return []
+        }
+        return fetchWeek(nextDate)
+    }
+    
+    //Creating previous week based on last current week date
+    func createPreviousWeek() -> [WeekDay] {
+        let calendar = Calendar.current
+        let startOfLastDate = calendar.startOfDay(for: self)
+        guard let nextDate = calendar.date(byAdding: .day, value: -1, to: startOfLastDate) else {
+            return []
+        }
+        return fetchWeek(nextDate)
     }
 }

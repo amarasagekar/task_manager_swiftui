@@ -14,7 +14,7 @@ extension View {
     }
     
     func vSpacing(_ alignment: Alignment) -> some View {
-        self.frame(maxWidth: .infinity, alignment: alignment)
+        self.frame(maxHeight: .infinity, alignment: alignment)
     }
     
     //Checking two date are same

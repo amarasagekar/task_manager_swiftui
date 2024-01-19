@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091C53C62B5A9CAA006C4E34 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C53C52B5A9CAA006C4E34 /* TaskItem.swift */; };
+		091C53C82B5AA7FE006C4E34 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C53C72B5AA7FE006C4E34 /* NewTask.swift */; };
 		097B44DA2B5810E2000A6C85 /* TaskManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B44D92B5810E2000A6C85 /* TaskManagerApp.swift */; };
 		097B44DC2B5810E2000A6C85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B44DB2B5810E2000A6C85 /* ContentView.swift */; };
 		097B44DE2B5810E4000A6C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097B44DD2B5810E4000A6C85 /* Assets.xcassets */; };
@@ -14,11 +16,14 @@
 		097B44E32B5810E4000A6C85 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B44E22B5810E4000A6C85 /* Persistence.swift */; };
 		097B44E62B5810E4000A6C85 /* TaskManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 097B44E42B5810E4000A6C85 /* TaskManager.xcdatamodeld */; };
 		097B44ED2B581115000A6C85 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B44EC2B581115000A6C85 /* Task.swift */; };
+		0987D8702B5A4F8C00B17925 /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987D86F2B5A4F8C00B17925 /* OffsetKey.swift */; };
 		09BA980E2B597DAC00F3BE28 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA980D2B597DAC00F3BE28 /* +View.swift */; };
 		09BA98102B59835A00F3BE28 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA980F2B59835A00F3BE28 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091C53C52B5A9CAA006C4E34 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		091C53C72B5AA7FE006C4E34 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 		097B44D62B5810E2000A6C85 /* TaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097B44D92B5810E2000A6C85 /* TaskManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerApp.swift; sourceTree = "<group>"; };
 		097B44DB2B5810E2000A6C85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +32,7 @@
 		097B44E22B5810E4000A6C85 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		097B44E52B5810E4000A6C85 /* TaskManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskManager.xcdatamodel; sourceTree = "<group>"; };
 		097B44EC2B581115000A6C85 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0987D86F2B5A4F8C00B17925 /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
 		09BA980D2B597DAC00F3BE28 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
 		09BA980F2B59835A00F3BE28 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +71,10 @@
 				097B44EC2B581115000A6C85 /* Task.swift */,
 				09BA980D2B597DAC00F3BE28 /* +View.swift */,
 				097B44DB2B5810E2000A6C85 /* ContentView.swift */,
+				091C53C52B5A9CAA006C4E34 /* TaskItem.swift */,
+				0987D86F2B5A4F8C00B17925 /* OffsetKey.swift */,
 				09BA980F2B59835A00F3BE28 /* DateExtension.swift */,
+				091C53C72B5AA7FE006C4E34 /* NewTask.swift */,
 				097B44DD2B5810E4000A6C85 /* Assets.xcassets */,
 				097B44E22B5810E4000A6C85 /* Persistence.swift */,
 				097B44E42B5810E4000A6C85 /* TaskManager.xcdatamodeld */,
@@ -154,9 +163,12 @@
 			files = (
 				097B44E32B5810E4000A6C85 /* Persistence.swift in Sources */,
 				09BA98102B59835A00F3BE28 /* DateExtension.swift in Sources */,
+				0987D8702B5A4F8C00B17925 /* OffsetKey.swift in Sources */,
 				097B44DC2B5810E2000A6C85 /* ContentView.swift in Sources */,
+				091C53C62B5A9CAA006C4E34 /* TaskItem.swift in Sources */,
 				09BA980E2B597DAC00F3BE28 /* +View.swift in Sources */,
 				097B44ED2B581115000A6C85 /* Task.swift in Sources */,
+				091C53C82B5AA7FE006C4E34 /* NewTask.swift in Sources */,
 				097B44E62B5810E4000A6C85 /* TaskManager.xcdatamodeld in Sources */,
 				097B44DA2B5810E2000A6C85 /* TaskManagerApp.swift in Sources */,
 			);
