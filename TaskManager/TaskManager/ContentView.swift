@@ -98,7 +98,7 @@ struct ContentView: View {
                         .foregroundStyle(.white)
                 }
                 .fullScreenCover(isPresented: $createNewTask, content: {
-                    NewTask()
+                    Newtask()
                 })
             }
     }
